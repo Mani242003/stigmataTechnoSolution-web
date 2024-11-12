@@ -8,7 +8,7 @@ import Paragraph from "../Atoms/paragraph";
 import { FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import NewsCard from "../NewsCard";
-import newsData from "../../assets/data/NewsData";
+import newsData from "../../assets/data/news";
 
 
 

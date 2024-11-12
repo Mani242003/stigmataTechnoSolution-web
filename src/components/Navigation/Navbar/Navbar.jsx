@@ -335,7 +335,7 @@ const Navbar = () => {
             <div className="flex items-center justify-center w-12 h-10 bg-blue-100 rounded text-lg text-green-500 cursor-pointer"  onClick={toggleGalleryDrawer}>
               <div
                 className=" sm:flex items-center justify-center text-black rounded-md gap-6 opacity-70 sm:text-xxl"
-               x
+               
               >
                 <IoMdMenu />
               </div>
