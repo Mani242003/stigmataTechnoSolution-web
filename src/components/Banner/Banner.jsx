@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Banner = ({ data }) => {
   return (
-    <div className="bg-bodyBg py-12 px-6 sm:px-10 lg:px-24">
+    <div className="bg-bodyBg py-12  sm:px-10 lg:px-24">
       <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-lg p-8">
         {/* Title */}
         <h2
@@ -60,7 +60,7 @@ const Banner = ({ data }) => {
           data-aos-duration="500"
           className="mt-12 text-center"
         >
-          <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+          <p className="text-lg text-gray-600 mb-4 leading-relaxed text-start">
             {data.finalText1}{" "}
             <span className="font-semibold">{data.finalText2}</span>{" "}
             {data.finalText3}

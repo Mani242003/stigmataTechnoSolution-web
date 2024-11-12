@@ -2,9 +2,15 @@ import React from "react";
 import Banner from "../../components/Banner/Banner";
 import ServicesBanner from "../../components/ServicesBanner/ServicesBanner";
 import imageUrl from "../../assets/services/mobileBg.jpg";
-import { FaChevronRight } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+
+import sample1 from "../../assets/sample1.png";
+import sample2 from "../../assets/sample2.png";
+
+import img1 from "../../assets/icons/reactjs.svg";
+import img3 from "../../assets/icons/wordPress.svg";
+import restApi from "../../assets/icons/restApi.svg"
 import ios from "../../assets/ios-1.svg";
+import { BsFillRecord2Fill } from "react-icons/bs";
 
 const MobileAppDevelopment = () => {
   const servicesData = {
@@ -50,6 +56,7 @@ const MobileAppDevelopment = () => {
     
        <MobileDevelopmentSection />
       <Banner data={ServicesBannerData} />
+      <WorkSample />
     </>
   );
 };
@@ -70,12 +77,12 @@ export default MobileAppDevelopment;
 
 const MobileDevelopmentSection = () => {
   return (
-    <div className="flex  flex-col sm:flex-row-reverse pr-4">
-    <div className="flex-shrink-0">
-      <img src={ios} alt="" className="w-88" />
+    <div className="flex  flex-col sm:flex-row-reverse">
+    <div className="flex-shrink-0 flex justify-center items-center">
+      <img src={ios} alt="" className="w-[20rem]  sm:w-88" />
     </div>
-    <div className="flex justify-center items-center flex-col pl-8 p-4">
-      <span className="text-4xl font-semibold">
+    <div className="flex justify-cent items-start flex-col p-[1rem] pt-0 sm:p-[3rem]">
+      <span className="text-[35px] font-semibold">
         Transform Your Mobile Development with our React Native
       </span>
       <span className="mt-8 text-lg leading-8 tracking-wide">
@@ -92,6 +99,108 @@ const MobileDevelopmentSection = () => {
   
   );
 };
+
+
+
+
+const WorkSample = () => {
+  return (
+    <section className="w-full" id="simplicity">
+    <div className="flex flex-col md:flex-row items-start w-full bg-[#f3f5f9] p-8">
+      <div className="p-4 md:p-8">
+        <img src={sample2} alt="" className="w-[80rem]" />
+      </div>
+
+      <div className="flex flex-col p-4 md:p-8">
+        <span className="text-4xl font-semibold tracking-wide">
+          Mart Easy Mobile Application
+        </span>
+        <span className="my-4 text-lg leading-relaxed">
+          Mart Easy is an Andaman island-based multiple vendor managed
+          ecommerce product. Mart Easy manages 8 different categories of
+          products with several subcategories.
+        </span>
+        <span className="font-semibold mb-4">Features :</span>
+
+        <div className="flex items-center space-x-2">
+          <BsFillRecord2Fill color="#5E6FEC" size={26} />
+          <span className="text-gray-800 opacity-80">Login</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <BsFillRecord2Fill color="#5E6FEC" size={26} />
+          <span className="text-gray-800 opacity-80">Geofence Tracking</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <BsFillRecord2Fill color="#5E6FEC" size={26} />
+          <span className="text-gray-800 opacity-80">Grid Management</span>
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center md:space-x-20 pt-8">
+          <div className="flex flex-col items-center text-center">
+            <img src={img1} alt="" className="w-20" />
+            <span className="font-bold tracking-wide">React Native</span>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <img src={img3} alt="" className="w-20" />
+            <span className="font-bold tracking-wide">WordPress</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="flex flex-col md:flex-row-reverse items-start w-full bg-[#FEF6D6] p-8">
+      <div className="flex items-center justify-center p-4 md:p-8">
+        <img src={sample1} alt="" className="w-[80rem]  " />
+      </div>
+
+      <div className="flex flex-col p-4 md:p-8">
+        <span className="text-4xl font-semibold tracking-wide">
+          Larsen & Tourbo (L&T) – Coastal Area Construction
+        </span>
+        <span className="my-4 text-lg leading-relaxed">
+          Grid Mobile Application Development is an enterprise solution
+          designed to display comprehensive grid progress. It incorporates
+          geolocation features to provide real-time updates on vendor
+          locations and grid construction status.
+        </span>
+        <span className="font-semibold mb-4">Features :</span>
+
+        <div className="flex items-center space-x-2">
+          <BsFillRecord2Fill color="#5E6FEC" size={26} />
+          <span className="text-gray-800 opacity-80">WordPress</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <BsFillRecord2Fill color="#5E6FEC" size={26} />
+          <span className="text-gray-800 opacity-80">
+            Executive Security Dashboard
+          </span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <BsFillRecord2Fill color="#5E6FEC" size={26} />
+          <span className="text-gray-800 opacity-80">React Native</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <BsFillRecord2Fill color="#5E6FEC" size={26} />
+          <span className="text-gray-800 opacity-80">Rest API</span>
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center md:space-x-20 pt-8">
+          <div className="flex flex-col items-center text-center">
+            <img src={img1} alt="" className="w-20" />
+            <span className="font-bold tracking-wide">React Native</span>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <img src={restApi} alt="" className="w-20" />
+            <span className="font-bold tracking-wide">Rest API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  )
+}
+
+
 
 
 

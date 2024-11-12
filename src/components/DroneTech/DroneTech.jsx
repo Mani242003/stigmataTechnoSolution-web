@@ -64,7 +64,7 @@ const DroneTech = () => {
         </div>
 
         {/* Left Section (Text) */}
-        <div data-aos="zoom-in" className="accordion_left w-full lg:w-[50%] flex flex-col justify-center items-start p-4 lg:p-8 space-y-4">
+        <div data-aos="zoom-in" className="accordion_left w-full lg:w-[50%] flex flex-col justify-center items-start p-0 sm:p-4 lg:p-8 space-y-4">
           <h2 className="text-4xl  mt-6  tracking-wide">
             Drone Video Analysis for
             <span className="ml-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">

@@ -92,7 +92,7 @@ const KeyCharacter = () => {
       <div className="p-6 sm:p-10">
         <div className="text-center mb-10">
           <span className="text-white text-3xl sm:text-5xl font-semibold tracking-tight leading-tight">
-            Benefits of Our Serverless Computing Solutions:
+            Benefits of Our Serverless Computing Solutions
           </span>
         </div>
         <div className="p-8 sm:p-14 flex flex-wrap gap-8 justify-center">
@@ -167,7 +167,7 @@ const Problem = () => {
     <section className="w-full bg-white" id="problem">
       <div className="w-full px-8 py-12">
         <div className="text-center flex flex-col gap-2 items-center p-4">
-          <span className="text-5xl font-bold text-gray-800 mb-6">Our Serverless Computing Services</span>
+          <span className="text-[35px] font-bold text-gray-800 mb-6">Our Serverless Computing Services</span>
         </div>
 
         <div className="w-full">

@@ -19,8 +19,8 @@ import Careers from "../../pages/Careers";
 const Routers = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/home" />} />
-      <Route path="/home" element={<Home />} />
+      {/* <Route path="/" element={<Navigate to="/home" />} /> */}
+      <Route path="/" element={<Home />} />
       <Route path="/serverless computing" element={<ServerLess />} />
       <Route path="/devops" element={<DevOps />} />
       <Route

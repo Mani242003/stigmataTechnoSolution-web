@@ -1,7 +1,7 @@
 const NewsCard = ({ image, title, link })=>{
 
     return (
-      <section data-aos="zoom-in" className="  flex w-[20rem] flex-col  gap-6 overflow-hidden">
+      <section data-aos="zoom-in" className="  flex w-[19rem] flex-col  gap-6 overflow-hidden">
         <div className="">
           {/* <img
             

@@ -1,12 +1,10 @@
 /* eslint-disable react/no-unknown-property */
-import React from "react";
 import Image1 from "../../assets/home/bg1.png";
 import Image2 from "../../assets/home/bg2.png";
 import Image3 from "../../assets/home/bg3.png";
 import Image4 from "../../assets/home/bg4.png";
 
 import Slider from "react-slick";
-import HoverCard from "../CustomHoverCard/HoverCard";
 import { Link } from "react-router-dom";
 
 const ImageList = [
@@ -38,7 +36,7 @@ const ImageList = [
   },
 ];
 
-const Hero = ({ handleOrderPopup }) => {
+const Hero = () => {
   var settings = {
     dots: false,
     arrows: false,
@@ -58,7 +56,7 @@ const Hero = ({ handleOrderPopup }) => {
         {/* background pattern */}
         <div className="h-[560px] w-[700px] bg-primary/40 absolute -top-1/2 right-0 rounded-3xl rotate-45 -z[8]"></div>
         {/* hero section */}
-        <div className="container  sm:h-[550px] pt-[4rem] sm:pb-0">
+        <div className="container  sm:h-[550px] pt-[2rem] sm:pt-[4rem] sm:pb-0">
           <Slider {...settings}>
             {ImageList.map((data) => (
               // eslint-disable-next-line react/jsx-key

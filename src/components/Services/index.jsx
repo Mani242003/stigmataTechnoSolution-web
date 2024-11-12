@@ -4,6 +4,7 @@ import { CgWebsite } from "react-icons/cg";
 import { FaCloud } from "react-icons/fa6";
 import { FaMobileScreenButton } from "react-icons/fa6";
 import { BsPlugin } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function Features() {
   const dataFeatures = [
@@ -69,7 +70,7 @@ export default function Features() {
         >
           An Emerging Player In
         </span>
-        <h2 data-aos="zoom-in" className="text-4xl  mt-6  tracking-wide">
+        <h2 data-aos="zoom-in" className="text-[35px] my-[1rem]  mt-6  tracking-wide">
           Software Development/ <br />
           Automation
           <span className="ml-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -91,12 +92,12 @@ export default function Features() {
               </div>
               <h5 className="text-2xl font-semibold mb-4">{feature.title}</h5>
               <p className="text-md text-neutral-500 mb-6">{feature.content}</p>
-              <a
-                href={feature.link}
+              <Link
+                to={feature.link}
                 className="text-black font-semibold hover:text-secondary transition duration-300"
               >
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
         ))}

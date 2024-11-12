@@ -166,7 +166,7 @@ const Navbar = () => {
         >
           <div>
             <Link
-              to="/home"
+              to="/"
               className="font-bold text-2xl sm:text-3xl flex gap-2"
             >
              
@@ -313,34 +313,39 @@ const Navbar = () => {
             </ul>
           </div>
           <Link
-            to="/contact us"
-            className="bg-primary bg-opacity-70   transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
-          >
-            <span className="hidden sm:block transition-all duration-200">
-              Schedule a Call
-            </span>
-            <IoCallSharp className="text-xl text-white drop-shadow-sm cursor-pointer" />
-          </Link>
+  to="/contact us"
+  className="bg-primary bg-opacity-70 transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group hover:bg-opacity-90 hover:scale-105 hover:shadow-lg"
+>
+  <span className="hidden sm:block transition-all duration-200">
+    Schedule a Call
+  </span>
+  <IoCallSharp className="text-xl text-white drop-shadow-sm cursor-pointer" />
+</Link>
 
-          {window.innerWidth > 770 ? (
-            <div className="flex items-center justify-center w-12 h-10 bg-blue-100 rounded text-lg text-green-500 cursor-pointer "  onClick={toggleGalleryDrawer}>
-              <div
-                className=" sm:flex items-center justify-center text-black rounded-md gap-6 opacity-70 sm:text-xl"
-               
-              >
-                <IoMdMenu />
-              </div>
-            </div>
-          ) : (
-            <div className="flex items-center justify-center w-12 h-10 bg-blue-100 rounded text-lg text-green-500 cursor-pointer"  onClick={toggleGalleryDrawer}>
-              <div
-                className=" sm:flex items-center justify-center text-black rounded-md gap-6 opacity-70 sm:text-xxl"
-               
-              >
-                <IoMdMenu />
-              </div>
-            </div>
-          )}
+          {window.innerWidth <= 778 ? (
+
+<div
+  className="flex items-center justify-center w-12 h-10 bg-blue-100 rounded text-lg text-green-500 cursor-pointer hover:bg-blue-200 hover:scale-105 transition-all duration-200"
+  onClick={toggleDrawer}
+>
+  <div className="sm:flex items-center justify-center text-black rounded-md gap-6 opacity-70 sm:text-3xl hover:opacity-100">
+    <IoMdMenu className="text-2xl sm:text-3xl" /> {/* Icon size increased */}
+  </div>
+</div>
+ 
+) : (
+ 
+
+<div
+  className="flex items-center justify-center w-12 h-10 bg-blue-100 rounded text-lg text-green-500 cursor-pointer hover:bg-blue-200 hover:scale-105 transition-all duration-200"
+  onClick={toggleGalleryDrawer}
+>
+  <div className="sm:flex items-center justify-center text-black rounded-md gap-6 opacity-70 sm:text-3xl hover:opacity-100">
+    <IoMdMenu className="text-1xl sm:text-3xl" /> {/* Icon size increased */}
+  </div>
+</div>
+)}
+
         </div>
       </div>
 

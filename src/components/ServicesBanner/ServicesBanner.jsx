@@ -9,7 +9,7 @@ const ServicesBanner = ({ data }) => {
       {data.isContact ? (
         <div className="DevOps_container">
           <div
-            className="DevOpsMainHeader h-[400px] sm:h-[400px] md:h-[400px] flex flex-col items-start justify-center px-6 sm:px-10 md:px-16 text-white"
+            className="DevOpsMainHeader h-[470px] sm:h-[400px] md:h-[400px] flex flex-col items-start justify-center px-6 sm:px-10 md:px-16 text-white"
             style={{
               backgroundImage: `url(${data.image})`,
               backgroundSize: "cover",
@@ -22,7 +22,7 @@ const ServicesBanner = ({ data }) => {
               data-aos="zoom-out"
               data-aos-duration="500"
               data-aos-once="true"
-              className=" text-white text-5xl font-normal tracking-wider block mb-4 mt-9"
+              className=" text-white text-4xl sm:text-5xl  font-normal tracking-wider block mb-4 mt-9"
             >
               We appreciate your interest in Stigmata!
             </span>
@@ -50,7 +50,7 @@ const ServicesBanner = ({ data }) => {
       ) : (
         <div className="DevOps_container">
           <div
-            className="DevOpsMainHeader h-[400px] sm:h-[400px] md:h-[400px] flex flex-col items-start justify-center px-6 sm:px-10 md:px-16 text-white"
+            className="DevOpsMainHeader h-[470px] sm:h-[400px] md:h-[400px] flex flex-col items-start justify-center px-6 sm:px-10 md:px-16 text-white"
             style={{
               backgroundImage: `url(${data.image})`,
               backgroundSize: "cover",

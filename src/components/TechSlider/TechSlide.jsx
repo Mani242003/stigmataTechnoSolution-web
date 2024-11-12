@@ -1,19 +1,19 @@
 import Slider from "react-slick";
 
-import img1 from "../../assets/TechExperts/aws.png";
-import img2 from "../../assets/TechExperts/atlassian.png";
-import img3 from "../../assets/TechExperts/openai.png";
-import img4 from "../../assets/TechExperts/razorpay.png";
-import img5 from "../../assets/TechExperts/PowerBi.png";
-import img6 from "../../assets/TechExperts/reactjs.png";
-import img7 from "../../assets/TechExperts/ReatNative.png";
-import img8 from "../../assets/TechExperts/javascript.png";
-import img9 from "../../assets/TechExperts/java.png";
-import img10 from "../../assets/TechExperts/Amplify.png";
-import img11 from "../../assets/TechExperts/node.png";
-import img12 from "../../assets/TechExperts/aspnet.jpg";
-import img13 from "../../assets/TechExperts/SQL.jpg";
-import img14 from "../../assets/TechExperts/Kubermets.png";
+import img1 from "../../assets/TechExperts/aws.svg";
+import img2 from "../../assets/TechExperts/atlisian.svg";
+import img3 from "../../assets/TechExperts/openai.svg";
+import img4 from "../../assets/TechExperts/razorpay.svg";
+import img5 from "../../assets/TechExperts/powerBI.svg";
+import img6 from "../../assets/TechExperts/reactjs.svg";
+import img7 from "../../assets/TechExperts/reactnative.svg";
+import img8 from "../../assets/TechExperts/js.svg";
+import img9 from "../../assets/TechExperts/java.svg";
+import img10 from "../../assets/TechExperts/amplify.svg";
+import img11 from "../../assets/TechExperts/node-js.svg";
+import img12 from "../../assets/TechExperts/asp.svg";
+import img13 from "../../assets/TechExperts/sql.svg";
+import img14 from "../../assets/TechExperts/kubernets.svg";
 
 const TechSlide = () => {
   const images = [
@@ -115,7 +115,7 @@ const TechSlide = () => {
     <section className="bg-bodyBg overflow-hidden flex flex-col gap-0">
       <div className="text-center py-8 pt-0">
        
-        <h2 data-aos="zoom-in" className="text-4xl  mt-6  tracking-wide">
+        <h2 data-aos="zoom-in" className="text-[35px] my-[1rem]  mt-6  tracking-wide">
         Our Areas of 
           <span className="ml-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Experts
@@ -147,7 +147,7 @@ const CustomTechSlide = ({ img, width }) => {
     <div className="w-[200px] h-[100px] bg-white rounded-lg m-3 flex justify-center items-center shadow-lg p-[3.3rem]">
       
 
-                        <img
+                        {/* <img
                           loading="lazy"
                           role="presentation"
                           src={img}
@@ -162,8 +162,8 @@ const CustomTechSlide = ({ img, width }) => {
                           }}
                           alt="Description of the image"
                           // priority={data.isImportant ? true : false}
-                        />
-      {/* <img src={img} alt="" width={width} /> */}
+                        /> */}
+      <img src={img} alt="" style={{filter: "grayscale(100%)"}} width={width} />
     </div>
   );
 };

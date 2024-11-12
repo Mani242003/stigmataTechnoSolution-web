@@ -49,6 +49,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                   <Link
                     className="text-white text-sm no-underline pl-4 tracking-wide"
                     to="/serverless computing"
+                    onClick={toggleDrawer}
                   >
                     Serverless Computing
                   </Link>
@@ -56,6 +57,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                   <Link
                     className="text-white text-sm no-underline pl-4 tracking-wide"
                     to="/devops"
+                    onClick={toggleDrawer}
                   >
                     Devops
                   </Link>
@@ -63,6 +65,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                   <Link
                     className="text-white text-sm no-underline pl-4 tracking-wide"
                     to="/mobile app development"
+                    onClick={toggleDrawer}
                   >
                     Mobile App Development
                   </Link>
@@ -70,6 +73,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                   <Link
                     className="text-white text-sm no-underline pl-4 tracking-wide"
                     to="/plugin-development"
+                    onClick={toggleDrawer}
                   >
                     Plugin Development
                   </Link>
@@ -77,6 +81,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                   <Link
                     className="text-white text-sm no-underline pl-4 tracking-wide"
                     to="/software development"
+                    onClick={toggleDrawer}
                   >
                     Software Application Development
                   </Link>
@@ -84,6 +89,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                   <Link
                     className="text-white text-sm no-underline pl-4 tracking-wide"
                     to="/cloud migration"
+                    onClick={toggleDrawer}
                   >
                     Cloud Migration
                   </Link>
@@ -91,6 +97,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                   <Link
                     className="text-white text-sm no-underline pl-4 tracking-wide"
                     to="/Artificial intelligence"
+                    onClick={toggleDrawer}
                   >
                     Artificial Intelligence
                   </Link>

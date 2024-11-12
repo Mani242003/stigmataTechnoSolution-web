@@ -98,7 +98,7 @@ const Footer = () => {
                           // priority={data.isImportant ? true : false}
                         />
                       </picture>
-          <span   className="text-center">© 2024 | Stigmata Techno Solution. Ltd. All Rights Reserved.</span>
+          <span   className="text-center mx-[1rem] ">© 2024 | Stigmata Techno Solution. Ltd. All Rights Reserved.</span>
         </div>
       </div>
     </section>

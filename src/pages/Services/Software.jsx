@@ -49,7 +49,7 @@ export default Software;
 const VendorComponent = () => {
     return (
       <div className="text-center pb-6 flex flex-col items-center">
-        <span className="text-black text-center text-4xl font-semibold opacity-70 mt-8">
+        <span className="text-black text-center text-[35px] mx-[10px] font-semibold opacity-70 mt-8">
           Software Development Vendor of
         </span>
         <div className="bg-black bg-opacity-70 h-[3px] w-[200px] mt-4"></div>

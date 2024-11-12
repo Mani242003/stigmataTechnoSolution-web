@@ -63,7 +63,7 @@ const ContactForm = () => {
   return (
     <div className="w-full flex flex-col lg:flex-row">
       <div className="flex flex-col p-8 ">
-        <span className="text-[45px] font-light text-transparent bg-clip-text bg-gradient-to-r from-[#0565fe] to-[#d241a4] mb-6 capitalize ">
+        <span className=" text-[40px] sm:text-[45px] font-light text-transparent bg-clip-text bg-gradient-to-r from-[#0565fe] to-[#d241a4] mb-6 capitalize ">
           Our office locations
         </span>
         <div className="border-b border-silver pb-4">

@@ -41,7 +41,7 @@ const Careers = () => {
     <>
       <div className=" ">
         <div
-          className=" h-[300px]  flex flex-col items-start justify-center px-6 sm:px-10 md:px-16 text-white"
+          className=" h-[300px]  flex flex-col items-start justify-center px-6 sm:px-10 md:px-16 text-white overflow-hidden"
           style={{
             backgroundImage: `url(${CarrerPage})`,
             backgroundSize: "cover",
@@ -125,13 +125,14 @@ const Careers = () => {
             <div className="flex-1 ">
               <img src={interImg} alt="" />
             </div>
-            <div className="flex-1 flex gap-[2rem] p-[1rem] sm:p-[2rem] flex-col">
-              <h2 className="text-4xl  mt-6  tracking-wide">
-                Internship
-                <span className="ml-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  Opportunities
-                </span>
-              </h2>
+            <div className="flex-1 flex flex-col gap-[2rem] p-[1rem] sm:p-[2rem] ">
+            <h2 className="text-4xl mt-6 tracking-wide flex flex-wrap">
+  Internship
+  <span className="ml-0 sm:ml-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+    Opportunities
+  </span>
+</h2>
+
               <span className="text-lg mt-4 leading-8">
                 We also offer internship programs for students and recent
                 graduates. If you are eager to gain hands-on experience and
