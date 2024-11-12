@@ -14,7 +14,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
     <>
       {isOpen && (
         <div
-          className="h-full w-full z-[1000] absolute top-0 left-0 bg-black bg-opacity-70 transition duration-300 ease-in-out"
+          className="h-full w-full z-[1000]  absolute fixed top-0 left-0 bg-black bg-opacity-70 transition duration-300 ease-in-out"
           onClick={toggleDrawer}
         ></div>
       )}
@@ -187,15 +187,15 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                 } overflow-hidden transition-all duration-300 bg-gray-700 p-0 mt-4`}
               >
                 <div className="flex flex-col gap-2 pt-4 pb-2.5">
-                  <Link to="/about us"  className="text-white text-sm no-underline pl-4 tracking-wide" >
+                  <Link to="/about us"  className="text-white text-sm no-underline pl-4 tracking-wide"   onClick={toggleDrawer} >
                     About Us
                   </Link>
                   <div className="border-b border-white/20"></div>
-                  <Link to="/contact us" className="text-white text-sm no-underline pl-4 tracking-wide">
+                  <Link to="/contact us" className="text-white text-sm no-underline pl-4 tracking-wide"   onClick={toggleDrawer}>
                     Contact Us
                   </Link>
                   <div className="border-b border-white/20"></div>
-                  <Link to="/careers" className="text-white text-sm no-underline pl-4 tracking-wide" >
+                  <Link to="/careers"  className="text-white text-sm no-underline pl-4 tracking-wide"   onClick={toggleDrawer} >
                     Careers
                   </Link>
                 </div>
@@ -221,7 +221,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                 } overflow-hidden transition-all duration-300 bg-gray-700 p-0 mt-4`}
               >
                 <div className="flex flex-col gap-2 pt-4 pb-2.5">
-                  <Link to="/blog" className="text-white text-sm no-underline pl-4 tracking-wide">
+                  <Link  to="/blog" className="text-white text-sm no-underline pl-4 tracking-wide"   onClick={toggleDrawer}>
                     Blog
                   </Link>
                   <div className="border-b border-white/20"></div>
@@ -235,6 +235,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                   <div className="border-b border-white/20"></div>
 
                   <Link
+                  
                     to="/news"
                     className="text-white text-sm no-underline pl-4 tracking-wide"
                     onClick={toggleDrawer}
@@ -251,7 +252,7 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
                 className="flex flex-col gap-2 pt-1 pb-2.5"
                 onClick={() => accordianToggel(6)}
               >
-                <Link to="/contact us" className="text-white text-sm no-underline pl-4 tracking-wide text-lg font-semibold" >
+                <Link to="/contact us"   onClick={toggleDrawer} className="text-white text-sm no-underline pl-4 tracking-wide text-lg font-semibold" >
                   Contact Us
                 </Link>
               </div>

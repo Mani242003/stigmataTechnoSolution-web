@@ -17,7 +17,7 @@ const GalleryDrawer = ({ isOpenGallery, toggleGalleryDrawer }) => {
     <>
       {isOpenGallery && (
         <div
-          className="absolute top-0 right-0 w-full h-full bg-black bg-opacity-70 z-50 transition-all duration-300 ease-in-out hidden md:block"
+          className="absolute fixed top-0 right-0 w-full h-full bg-black bg-opacity-70 z-50 transition-all duration-300 ease-in-out hidden md:block"
           onClick={toggleGalleryDrawer}
         ></div>
       )}

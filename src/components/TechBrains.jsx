@@ -86,12 +86,12 @@ const TB_CustomCard = ({ data }) => {
         <img
           src={data.img}
           alt={data.name}
-          className="w-24 h-24 rounded-full border-2 border-gray-300 shadow-sm"
+          className="w-24 h-24 text-center rounded-full border-2 border-gray-300 shadow-sm"
         />
-        <h2 className="text-lg font-semibold text-gray-800 mt-4">
+        <h2 className="text-lg font-semibold text-center text-gray-800 mt-4">
           {data.name}
         </h2>
-        <p className="text-sm text-gray-500">{data.position}</p>
+        <p className="text-sm text-gray-500 text-center">{data.position}</p>
       </div>
 
       {/* Skills Section */}

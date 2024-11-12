@@ -217,7 +217,7 @@ const Aboutus = () => {
             </p>
             
           </div>
-          <div className="flex-1 flex items-center justify-center mt-8 p-8 lg:mt-0">
+          <div className="flex-1 mt-8 ml-0 sm:ml-[1rem] bg-black">
             <img src={visionAndMission} alt="" className="" />
           </div>
         </div>
@@ -363,7 +363,7 @@ const AboutUsBanner = () => {
           backgroundAttachment: "fixed",
         }}
       >
-        <span className=" text-white text-5xl font-normal font-extrabold tracking-wider block mb-4 mt-9">
+        <span className=" text-white text-4xl sm:text-5xl font-normal font-extrabold tracking-wider leading-tight  block mb-4 mt-9">
           Welcome To Stigmata <br />
           Techno Solutions
         </span>
