@@ -18,17 +18,23 @@ const ExampleCarouselImage = ({ img, text, text2, text3 }) => {
         className="w-full h-full bg-cover bg-center bg-no-repeat transition-all duration-1000"
         style={{ backgroundImage: `url(${img})` }}
       >
-        <div className="absolute top-16 left-0 sm:left-8 w-[99vw] h-[24rem] sm:w-[90vw] sm:h-[24rem] p-4 pt-[3rem] sm:pt-[0rem] sm:p-8 flex flex-col justify-center bg-transparent sm:bg-gradient-to-r from-primary to-transparent bg-opacity-10 sm:h-[20rem]">
-          <span className="text-3xl  sm:text-4xl font-bold text-white tracking-wide transform transition-all duration-700 ease-in-out animate__animated animate__fadeInUp sm:text-3xl md:text-4xl">
+        <div  className="absolute top-16 left-0 sm:left-8 w-[99vw] h-[24rem] sm:w-[90vw] sm:h-[24rem] p-4 pt-[3rem] sm:pt-[0rem] sm:p-8 flex flex-col justify-center bg-transparent sm:bg-gradient-to-r from-primary to-transparent bg-opacity-10 sm:h-[20rem]">
+          <span   data-aos="zoom-out"
+              data-aos-duration="500"
+              data-aos-once="true" className="text-3xl  sm:text-4xl font-bold text-white tracking-wide transform transition-all duration-700 ease-in-out animate__animated animate__fadeInUp sm:text-3xl md:text-4xl">
             {text}
           </span>
-          <span className="text-3xl  sm:text-4xl font-bold text-white tracking-wide transform transition-all duration-700 ease-in-out animate__animated animate__fadeInUp sm:text-3xl md:text-4xl">
+          <span  data-aos="zoom-out"
+              data-aos-duration="500"
+              data-aos-once="true" className="text-3xl  sm:text-4xl font-bold text-white tracking-wide transform transition-all duration-700 ease-in-out animate__animated animate__fadeInUp sm:text-3xl md:text-4xl">
             {text2}
           </span>
 
           <div className="mt-6 w-[100%] flex flex-col items-start sm:w-[80%]">
             <div className="flex items-center pl-4 h-16 border-l-8 border-white mt-4">
-              <span className="text-xl font-medium text-white sm:text-lg">
+              <span   data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="100" className="text-xl font-medium text-white sm:text-lg">
                 {text3}
               </span>
             </div>
