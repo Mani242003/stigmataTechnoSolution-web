@@ -1,9 +1,8 @@
-import React from 'react'
 import ServicesBanner from '../../components/ServicesBanner/ServicesBanner';
-import imageUrl from "../../assets/services/pluginBgF.png"
+import imageUrl from "/images/pluginBgF.png"
 import { BsFillRecord2Fill } from "react-icons/bs";
-import plug1 from "../../assets/plug1.png";
-import plug2 from "../../assets/plug2.png";
+import plug1 from "/images/plug1.png";
+import plug2 from "/images/plug2.png";
 const Plugin = () => {
 
     const servicesData = {

@@ -1,17 +1,17 @@
 import ServicesBanner from '../../components/ServicesBanner/ServicesBanner';
-import imageUrl from "../../assets/services/softwareVector.jpg"
+import imageUrl from "/images/softwareVector.jpg"
 
-import s_vendor1 from "../../assets/sAmazonVendor.png";
-import s_vendor2 from "../../assets/s_vendor2.png";
-import s_vendor3 from "../../assets/images/trustCustomer/LandT1.jpg";
-import s_vendor4 from "../../assets/images/trustCustomer/landT2.jpg";
-import erp1 from "../../assets/erp1.png";
-import erp2 from "../../assets/erp2.png";
-import erp3 from "../../assets/erp3.png";
-import erp4 from "../../assets/erp4.png";
-import erp5 from "../../assets/erp5.png";
+import s_vendor1 from "/images/customer/sAmazonVendor.png";
+import s_vendor2 from "/images/customer/s_vendor2.png";
+import s_vendor3 from "/images/customer/LandT1.png";
+import s_vendor4 from "/images/customer/landT2.png";
+import erp1 from "/images/erp1.png";
+import erp2 from "/images/erp2.png";
+import erp3 from "/images/erp3.png";
+import erp4 from "/images/erp4.png";
+import erp5 from "/images/erp5.png";
 
-import orangeDot from "../../assets/orangeBullet.png";
+import orangeDot from "/images/icons/orangeBullet.png";
 import { BsFillRecord2Fill } from 'react-icons/bs';
 
 const Software = () => {

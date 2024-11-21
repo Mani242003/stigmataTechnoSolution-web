@@ -16,7 +16,13 @@ const Layout = () => {
       <div>
         <SocialMedia />
         <Routers />
-        <ScrollToTop smooth top="20" width="" />
+        <ScrollToTop  
+        color="white"
+          style={{
+            backgroundColor: '#3B82F6', // Change to your desired color
+            borderRadius: '50%', // Optional: makes the background circular
+            boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', // Optional: for a slight shadow effect
+          }} smooth top="20" width="" />
       </div>
       <Footer />
     </div>

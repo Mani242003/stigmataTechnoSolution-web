@@ -1,6 +1,6 @@
 import React from 'react'
 import ServicesBanner from '../components/ServicesBanner/ServicesBanner'
-import imageUrl from "../assets/contactBg.jpg"
+import imageUrl from "/images/contactBg.jpg"
 import ContactForm from '../components/ContactForm';
 
 const Contact = () => {

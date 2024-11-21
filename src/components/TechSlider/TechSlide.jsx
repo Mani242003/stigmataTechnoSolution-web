@@ -1,40 +1,10 @@
 import Slider from "react-slick";
+import { techSlideImageData1, techSlideImageData2 } from "../../data/techSliderData";
 
-import img1 from "../../assets/TechExperts/aws.svg";
-import img2 from "../../assets/TechExperts/atlisian.svg";
-import img3 from "../../assets/TechExperts/openai.svg";
-import img4 from "../../assets/TechExperts/razorpay.svg";
-import img5 from "../../assets/TechExperts/powerBI.svg";
-import img6 from "../../assets/TechExperts/reactjs.svg";
-import img7 from "../../assets/TechExperts/reactnative.svg";
-import img8 from "../../assets/TechExperts/js.svg";
-import img9 from "../../assets/TechExperts/java.svg";
-import img10 from "../../assets/TechExperts/amplify.svg";
-import img11 from "../../assets/TechExperts/node-js.svg";
-import img12 from "../../assets/TechExperts/asp.svg";
-import img13 from "../../assets/TechExperts/sql.svg";
-import img14 from "../../assets/TechExperts/kubernets.svg";
+
 
 const TechSlide = () => {
-  const images = [
-    { img: img1, w: 100 },
-    { img: img2 },
-    { img: img3 },
-    { img: img4 },
-    { img: img5, w: 100 },
-    { img: img6, w: 100 },
-    { img: img7, w: 100 },
-    { img: img8, w: 80 },
-  ];
-
-  const imgaes2 = [
-    { img: img9, w: 100 },
-    { img: img10, w: 120 },
-    { img: img11, w: 100 },
-    { img: img12, w: 100 },
-    { img: img13 },
-    { img: img14 },
-  ];
+  
 
   const settings1 = {
     dots: false,
@@ -125,7 +95,7 @@ const TechSlide = () => {
 
       <div className="pb-8">
         <Slider {...settings1}>
-          {images.map((data, i) => (
+          {techSlideImageData1.map((data, i) => (
             <CustomTechSlide key={i} img={data.img} width={data.w || 170} />
           ))}
         </Slider>
@@ -133,7 +103,7 @@ const TechSlide = () => {
 
       <div className="pb-8">
         <Slider {...settings2}>
-          {imgaes2.map((data, i) => (
+          {techSlideImageData2.map((data, i) => (
             <CustomTechSlide key={i} img={data.img} width={data.w || 170} />
           ))}
         </Slider>
@@ -163,7 +133,7 @@ const CustomTechSlide = ({ img, width }) => {
                           alt="Description of the image"
                           // priority={data.isImportant ? true : false}
                         /> */}
-      <img src={img} alt="" style={{filter: "grayscale(100%)"}} width={width} />
+      <img src={img} alt=""  width={width} />
     </div>
   );
 };

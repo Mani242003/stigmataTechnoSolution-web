@@ -1,15 +1,15 @@
-import React from "react";
+
 import Banner from "../../components/Banner/Banner";
 import ServicesBanner from "../../components/ServicesBanner/ServicesBanner";
-import imageUrl from "../../assets/services/mobileBg.jpg";
+import imageUrl from "/images/mobileBg.jpg";
 
-import sample1 from "../../assets/sample1.png";
-import sample2 from "../../assets/sample2.png";
+import sample1 from "/images/sample1.png";
+import sample2 from "/images/sample2.png";
 
-import img1 from "../../assets/icons/reactjs.svg";
-import img3 from "../../assets/icons/wordPress.svg";
-import restApi from "../../assets/icons/restApi.svg"
-import ios from "../../assets/ios-1.svg";
+import img1 from "/images/icons/reactjsIcon.svg";
+import img3 from "/images/icons/wordPress.svg";
+import restApi from "/images/icons/restApi.svg"
+import ios from "/images/icons/ios-1.svg";
 import { BsFillRecord2Fill } from "react-icons/bs";
 
 const MobileAppDevelopment = () => {

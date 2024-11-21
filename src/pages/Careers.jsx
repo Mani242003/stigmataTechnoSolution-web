@@ -1,11 +1,11 @@
 import React from "react";
-import people from "../assets/people.jpg";
+import people from "/images/people.jpg";
 
-import CarrerPage from "../assets/CarrerPageBg.jpg";
+import CarrerPage from "/images/CarrerPageBg.jpg";
 import Banner from "../components/Banner/Banner";
-import ApplyImg from "../assets/newEntite.jpg";
-import StayConnected from "../assets/StayConnected.jpg";
-import interImg from "../assets/interImg.jpg";
+import ApplyImg from "/images/newEntite.jpg";
+import StayConnected from "/images/StayConnected.jpg";
+import interImg from "/images/interImg.jpg";
 const ServicesBannerData = {
   title: "Why Choose React Native for Mobile Development?",
   services: [

@@ -1,9 +1,9 @@
-import imageUrl from "../assets/HomeBgSlide2.jpg";
+import imageUrl from "/images/aboutUsBg.jpg";
 import { useState } from "react";
 
-import acc1 from "../assets/aboutUs.png";
-import ourStory from "../assets/ourstory.jpg";
-import visionAndMission from "../assets/visionAndMission.jpg";
+import acc1 from "/images/ceoAboutUs.png";
+import ourStory from "/images/ourstory.jpg";
+import visionAndMission from "/images/visionAndMission.jpg";
 import Count from "../components/Count/Count";
 import TechBrains from "../components/TechBrains";
 

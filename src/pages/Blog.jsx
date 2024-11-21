@@ -12,8 +12,7 @@ const Blog = () => {
  
   
 </div>
-<BlogList />
-<BlogList />
+<BlogList isHomePage={false} />
 
     </div>
   )

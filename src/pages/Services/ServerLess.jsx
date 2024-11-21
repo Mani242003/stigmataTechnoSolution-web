@@ -1,16 +1,14 @@
 // ServerLess.js
-import React from "react";
 import ServicesBanner from "../../components/ServicesBanner/ServicesBanner";
-import imageUrl from "../../assets/services/serverless.png"; // Ensure this path is correct
-import HoverCard from "../../components/CustomHoverCard/HoverCard"
+import imageUrl from "/images/serverless.png"; // Ensure this path is correct
 import Banner from "../../components/Banner/Banner"
 
-import accesscontrol from "../../assets/icons/storage.webp";
-import insights from "../../assets/icons/load-balancer.webp";
-import compliance from "../../assets/icons/scaling.webp";
-import costSaving from "../../assets/icons/costSavingIcon.png";
+import accesscontrol from "/images/icons/storage.webp";
+import insights from "/images/icons/load-balancer.webp";
+import compliance from "/images/icons/scaling.webp";
+import costSaving from "/images/icons/costSavingIcon.png";
 
-import { MdOutlineMiscellaneousServices, MdSettingsApplications } from "react-icons/md";
+import { MdOutlineMiscellaneousServices, } from "react-icons/md";
 import { FaCode, FaCloud, FaRocket, FaTools, FaShieldAlt } from "react-icons/fa"; // Unique icons
 
 

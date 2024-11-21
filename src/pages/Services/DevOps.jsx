@@ -1,5 +1,5 @@
 import ServicesBanner from "../../components/ServicesBanner/ServicesBanner";
-import imageUrl from "../../assets/services/devopsPG.jpg";
+import imageUrl from "/images/devopsPG.jpg";
 import Banner from "../../components/Banner/Banner";
 import { FaRocket, FaUsers, FaCode, FaDollarSign } from "react-icons/fa";
 

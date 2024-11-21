@@ -1,11 +1,11 @@
 import React from "react";
 // import "./GalleryDrawer.scss";
 import { Scrollbars } from "react-custom-scrollbars-2";
-import img1 from "../../../assets/news/img1.jpg";
-import img2 from "../../../assets/news/img4.jpg";
-import img3 from "../../../assets/news/img5.jpg";
-import img4 from "../../../assets/news/news3.jpg";
-import logo from "../../../assets/logo.svg";
+import img1 from "/images/news/n3.jpg";
+import img2 from "/images/news/n6.jpg";
+import img3 from "/images/news/n6.jpg";
+import img4 from "/images/news/n6.jpg";
+import logo from "/logo.svg";
 import { IoCloseSharp } from "react-icons/io5";
 // import post1 from "../../../assets/images/news/img1.jpg";
 // import post2 from "../../../assets/images/news/img4.jpg";

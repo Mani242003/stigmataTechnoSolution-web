@@ -1,19 +1,7 @@
 import React from "react";
-import LAndT1 from "../../assets/images/trustCustomer/landT2.png";
-import LAndT2 from "../../assets/images/trustCustomer/LandT1.png";
 
-import img1 from "../../assets/images/trustCustomer/l1.png";
-import img2 from "../../assets/images/trustCustomer/l2.png";
-import img3 from "../../assets/images/trustCustomer/l3.png";
-import img4 from "../../assets/images/trustCustomer/l4.jpg";
-import img5 from "../../assets/images/trustCustomer/l5.png";
-import img7 from "../../assets/images/trustCustomer/l7.png";
-import img8 from "../../assets/images/trustCustomer/l8.png";
-import img11 from "../../assets/images/trustCustomer/11.png";
-import img12 from "../../assets/images/trustCustomer/L1213.png";
-import img13 from "../../assets/images/trustCustomer/L14.png";
-import img14 from "../../assets/images/trustCustomer/L15.png";
 import Slider from "react-slick";
+import trustCustomer from "../../data/trustCustomer";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -42,37 +30,37 @@ function SamplePrevArrow(props) {
 }
 
 const HoverCard = () => {
-  const images = [
-    { img: img8 },
+  // const images = [
+  //   { img: img8 },
 
-    { img: img2 },
-    { img: LAndT1, w: 200 },
+  //   { img: img2 },
+  //   { img: LAndT1, w: 200 },
 
-    { img: img3 },
-    { img: LAndT2, w: 200 },
+  //   { img: img3 },
+  //   { img: LAndT2, w: 200 },
 
-    // { img: img4 },
-    { img: img5 },
+  //   // { img: img4 },
+  //   { img: img5 },
 
-    // { img: img6, w: 110 },
-    { img: img7 },
-    { img: img1 },
+  //   // { img: img6, w: 110 },
+  //   { img: img7 },
+  //   { img: img1 },
 
-    // { img: logo1 },
+  //   // { img: logo1 },
 
-    { img: img11 },
-    { img: img12, w: 180 },
-    { img: img13, w: 160 },
-    // { img: logo1 },
+  //   { img: img11 },
+  //   { img: img12, w: 180 },
+  //   { img: img13, w: 160 },
+  //   // { img: logo1 },
 
-    { img: img14 },
-    // { img: img10, w: 100 },
-    // { img: img9 },
+  //   { img: img14 },
+  //   // { img: img10, w: 100 },
+  //   // { img: img9 },
 
-    // { img: img15, w: 100 },
-    // { img: img16, w: 100 },
-    // { img: logo1 },
-  ];
+  //   // { img: img15, w: 100 },
+  //   // { img: img16, w: 100 },
+  //   // { img: logo1 },
+  // ];
   const settings = {
     dots: false,
     infinite: true,
@@ -127,7 +115,7 @@ const HoverCard = () => {
   return (
     <div
       className="
-    bg-bodyBg  pb-[3rem]"
+    bg-bodyBg  pt-[1rem]"
     >
       <div className=" w-full   ">
         <h1 className="text-center py-4 mb-[1rem] text-2xl  font-medium ">
@@ -135,7 +123,7 @@ const HoverCard = () => {
         </h1>
         <div className="hoverCardLogoConatiner">
           <Slider {...settings}>
-            {images.map((data, i) => {
+            {trustCustomer.map((data, i) => {
               // console.log("maonio",data.img);
               return (
                 <div className="p-[1rem]" key={i}>
@@ -152,7 +140,7 @@ const HoverCard = () => {
                             height: "100%",
                             objectFit: "cover",
                             objectPosition: "center",
-                            filter: "grayscale(100%)"
+                            // filter: "grayscale(100%)"
                           }}
                           alt="Description of the image"
                         />

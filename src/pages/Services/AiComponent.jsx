@@ -1,4 +1,4 @@
-import imageUrl from "../../assets/services/AiBg.jpg";
+import imageUrl from "/images/AiBg.jpg";
 import Banner from "../../components/Banner/Banner";
 import DroneTech from "../../components/DroneTech/DroneTech";
 import ServicesBanner from "../../components/ServicesBanner/ServicesBanner";

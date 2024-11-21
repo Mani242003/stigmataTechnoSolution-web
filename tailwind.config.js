@@ -5,12 +5,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#3273F3",
+        primary: "#3B82F6",
         secondary: "#C543AA",
         serviesBg1:"#FFDB95",
         serviesBg2:"#9DEDC6",serviesBg3:"#FFBC9F",
         bodyBg:'#F3F4F6',
-        green : '#59D486',
+        green : '#3B82F6',
         titleBlue:'#1E3A8A',
         desGray:'#4B5563'
         

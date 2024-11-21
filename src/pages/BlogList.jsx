@@ -1,13 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import blogData from "../assets/data/blogData";
+import blogData from "../data/blogData";
 
-const BlogList = () => {
+const BlogList = ({isHomePage}) => {
   return (
-    <div className="flex flex-col sm:flex-row ">
-      {blogData.map((item) => (
-        <BlogItem item={item} key={item.id} />
-      ))}
+    <div className="flex flex-col sm:flex-row flex-wrap ">
+ {
+  blogData.map((item, index) => (
+    isHomePage 
+      ? (item.id === 1 || item.id === 2 || item.id === 3) && <BlogItem item={item} key={item.id} />
+      : index < 6 && <BlogItem item={item} key={item.id} />
+  ))
+}
+
     </div>
   );
 };
@@ -19,20 +24,22 @@ const BlogItem = ({ item }) => {
     <div data-aos="zoom-in" className=" lg:w-1/3 md:w-1/2 sm:w-1/2 p-4 mb-5">
       <div className="border border-gray-200 rounded overflow-hidden">
         {/* <img src={} alt="" className="w-full" /> */}
-        
 
-                        <img
-                          loading="lazy"
-                          role="presentation"
-                          src={imgUrl}
-                          srcSet={`${imgUrl}?w=500&h=500&fit=crop 500w, ${imgUrl}?w=1000&h=1000&fit=crop 1000w`}
-                          sizes="(max-width: 600px) 500px, 1000px"
-                         className="w-full"
-                          alt="Description of the image"
-                          // priority={data.isImportant ? true : false}
-                        />
+        <img
+          loading="lazy"
+          role="presentation"
+          src={imgUrl}
+          srcSet={`${imgUrl}?w=500&h=500&fit=crop 500w, ${imgUrl}?w=1000&h=1000&fit=crop 1000w`}
+          sizes="(max-width: 600px) 500px, 1000px"
+          className="w-full"
+          alt="Description of the image"
+          // priority={data.isImportant ? true : false}
+        />
         <div className="p-4">
-          <Link to={`/blogs/${title}`} className="text-blue-900 text-lg font-semibold hover:text-black transition duration-300">
+          <Link
+            to={`/blogs/${title}`}
+            className="text-blue-900 text-lg font-semibold hover:text-black transition duration-300"
+          >
             {title}
           </Link>
           <p className="text-gray-600 mt-3">
@@ -41,7 +48,10 @@ const BlogItem = ({ item }) => {
               : description}
           </p>
 
-          <Link to={`/blogs/${title}`} className="text-blue-900 font-semibold text-base mt-2 inline-block hover:text-black">
+          <Link
+            to={`/blogs/${title}`}
+            className="text-blue-900 font-semibold text-base mt-2 inline-block hover:text-black"
+          >
             Read More
           </Link>
 

@@ -1,5 +1,5 @@
 import ServicesBanner from '../../components/ServicesBanner/ServicesBanner';
-import imageUrl from "../../assets/services/Cloud-Migration.jpg"
+import imageUrl from "/images/Cloud-Migration.jpg"
 import { BsFillRecord2Fill } from 'react-icons/bs';
 import Banner from '../../components/Banner/Banner';
 

@@ -4,7 +4,7 @@ import Slider from "react-slick";
 // import TB_CustomCard from "./TB_CustomCard/TB_CustomCard";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
-import ourBrains from "../assets/data/ourBrains";
+import ourBrains from "../data/ourBrains";
 import ProgressBar from "@ramonak/react-progress-bar";
 const TechBrains = () => {
   let sliderRef1 = useRef(null);

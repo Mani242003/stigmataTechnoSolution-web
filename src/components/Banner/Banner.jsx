@@ -1,5 +1,3 @@
-import greenBullet from "../../assets/greenBullet.png";
-import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 

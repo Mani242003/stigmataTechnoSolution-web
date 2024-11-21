@@ -1,5 +1,5 @@
 import NewsCard from "../components/NewsCard";
-import news from "../assets/data/news";
+import newsData from "../data/newsData";
 
 const News = () => {
   return (
@@ -15,7 +15,7 @@ const News = () => {
       </div>
       <div className="flex items-center justify-center">
           <div className="flex items-center justify-center flex-wrap gap-4">
-            {news.map((blog) => (
+            {newsData.map((blog) => (
               <div key={blog.id} className="px-3">
                 {" "}
                 {/* Add padding here for spacing */}

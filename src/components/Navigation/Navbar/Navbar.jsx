@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../../../assets/logo.svg";
+import Logo from "/logo.svg";
 import { IoMdMenu } from "react-icons/io";
 import { FaCaretDown, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -314,7 +314,7 @@ const Navbar = () => {
           </div>
           <Link
   to="/contact us"
-  className="bg-primary bg-opacity-70 transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group hover:bg-opacity-90 hover:scale-105 hover:shadow-lg"
+  className="bg-primary  transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group hover:bg-opacity-90 hover:scale-105 hover:shadow-lg"
 >
   <span className="hidden sm:block transition-all duration-200">
     Schedule a Call
@@ -322,7 +322,7 @@ const Navbar = () => {
   <IoCallSharp className="text-xl text-white drop-shadow-sm cursor-pointer" />
 </Link>
 
-          {window.innerWidth <= 778 ? (
+          {window.innerWidth <= 1000 ? (
 
 <div
   className="flex items-center justify-center w-12 h-10 bg-blue-100 rounded text-lg text-green-500 cursor-pointer hover:bg-blue-200 hover:scale-105 transition-all duration-200"

@@ -247,12 +247,12 @@ const Drawer = ({ isOpen, toggleDrawer }) => {
             </div>
 
             {/* Section: Contact Us */}
-            <div className="pt-2.5">
+            <div className="pt-[0.3rem]">
               <div
-                className="flex flex-col gap-2 pt-1 pb-2.5"
+                className="flex flex-col gap-2  pb-2.5"
                 onClick={() => accordianToggel(6)}
               >
-                <Link to="/contact us"   onClick={toggleDrawer} className="text-white text-sm no-underline pl-4 tracking-wide text-lg font-semibold" >
+                <Link to="/contact us"   onClick={toggleDrawer} className="text-white  no-underline pl-4 tracking-wide text-lg text-lg font-semibold" >
                   Contact Us
                 </Link>
               </div>

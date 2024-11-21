@@ -1,5 +1,4 @@
 import Slider from "react-slick";
-import SubHead from "../Atoms/subhead";
 
 import Paragraph from "../Atoms/paragraph";
 
@@ -8,8 +7,7 @@ import Paragraph from "../Atoms/paragraph";
 import { FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import NewsCard from "../NewsCard";
-import newsData from "../../assets/data/news";
-
+import newsData from "../../data/newsData"
 
 
 

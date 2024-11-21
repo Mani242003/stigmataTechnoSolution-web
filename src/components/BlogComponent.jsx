@@ -22,7 +22,7 @@ const BlogComponent = () => {
         </h2>
       </div>
 
-    <BlogList />
+    <BlogList isHomePage={true} />
   </div>
 </section>
 

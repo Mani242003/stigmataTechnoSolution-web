@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../../assets/branches1.jpeg";
-import img2 from "../../assets/branches2.jpeg";
-import img3 from "../../assets/branches3.jpeg";
+import img1 from "/images/ceo.png";
+import img2 from "/images/youssef.jpeg";
+import img3 from "/images/lawrence.jpeg";
 
 const TeamMember = () => {
   return (

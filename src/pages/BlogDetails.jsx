@@ -1,14 +1,19 @@
-import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
-import blogData from "../assets/data/blogData.js";
+import { useEffect } from "react";
+import { useParams, Navigate } from "react-router-dom"; // Use Navigate instead of Redirect
 import Helmet from "../components/Helmet/Helmet.jsx";
 import { Link } from "react-router-dom";
 
-import commentImg from "../assets/Joined forece/avatar.png";
+import commentImg from "/images/icons/avatar.png";
+import blogData from "../data/blogData.js";
 
 const BlogDetails = () => {
   const { slug } = useParams();
   const blog = blogData.find((blog) => blog.title === slug);
+
+  // Redirect if blog not found using Navigate
+  if (!blog) {
+    return <Navigate to="/404" />; // Use Navigate to redirect
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -46,21 +51,19 @@ const BlogDetails = () => {
               </div>
 
               <div className="comment__list mt-5">
-                <h4 className="mb-5 text-xl font-semibold">3 Comments</h4>
+                <h4 className="mb-5 text-xl font-semibold">1 Comments</h4>
 
                 <div className="single__comment flex gap-3 mb-4">
                   <img src={commentImg} alt="" className="w-16 h-16 rounded-full border-2 border-blue-900 object-cover" />
                   <div className="comment__content">
-                    <h6 className="font-semibold">David Visa</h6>
+                    <h6 className="font-semibold">Stigmata Team</h6>
                     <p className="text-gray-600 mb-0">14 July, 2022</p>
                     <p className="text-gray-700">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eos nobis totam eius laborum molestias itaque minima
-                      distinctio, quae velit tempore!
+                    Great post! I really enjoyed reading this article. The insights about modern web development trends are spot on. Keep up the good work!
                     </p>
 
                     <span className="replay flex items-center gap-1 text-blue-900 font-semibold cursor-pointer">
-                      <i className="ri-reply-line"></i> Reply
+                      {/* <i className="ri-reply-line"></i> Reply */}
                     </span>
                   </div>
                 </div>

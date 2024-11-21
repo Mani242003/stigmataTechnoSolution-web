@@ -3,9 +3,9 @@ import { IoLocationOutline } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
 import { MdMailOutline, MdRefresh } from "react-icons/md";
 import { SlLocationPin } from "react-icons/sl";
-import canadaFlag from "../assets/canada.png";
-import IndianFlag from "../assets/Indianflag.png";
-import usaFlag from "../assets/usa.png";
+import canadaFlag from "/images/icons/canada.png";
+import IndianFlag from "/images/icons/Indianflag.png";
+import usaFlag from "/images/icons/usa.png";
 const ContactForm = () => {
   const initalValues = {
     firstName: "",

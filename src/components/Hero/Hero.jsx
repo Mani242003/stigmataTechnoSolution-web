@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unknown-property */
-import Image1 from "../../assets/home/bg1.png";
-import Image2 from "../../assets/home/bg2.png";
-import Image3 from "../../assets/home/bg3.png";
-import Image4 from "../../assets/home/bg4.png";
+// import Image1 from "../../assets/home/bg1.png";
+// import Image2 from "../../assets/home/bg2.png";
+// import Image3 from "../../assets/home/bg3.png";
+// import Image4 from "../../assets/home/bg4.png";
 
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
@@ -10,27 +10,27 @@ import { Link } from "react-router-dom";
 const ImageList = [
   {
     id: 1,
-    img: Image1,
+    // img: Image1,
     title: "Super charge your Business with, Artificial Intelligences.",
     description:
       "Unlock next-level business growth with AI solutions. Let's go!",
   },
   {
     id: 2,
-    img: Image2,
+    // img: Image2,
     title:
       "Thinking of Cloud Migration, DevOps, Serverless framework Architecture?",
     description: "OUR Experts are Waiting!",
   },
   {
     id: 3,
-    img: Image3,
+    // img: Image3,
     title: "Expert in Software Development ",
     description: "ERP, Workflow, Plugins, API development.",
   },
   {
     id: 4,
-    img: Image4,
+    // img: Image4,
     title: "You Imagine a Digital Future,We make it a Reality!",
     description: "ERP, Workflow, Plugins, API development.",
   },
@@ -99,7 +99,7 @@ const Hero = () => {
                     >
                     
 
-                        <img
+                        {/* <img
                           loading="lazy"
                           role="presentation"
                           src={data.img}
@@ -113,7 +113,7 @@ const Hero = () => {
                           }}
                           alt="Description of the image"
                           priority={data.isImportant ? true : false}
-                        />
+                        /> */}
                  
                       {/* <img src={data.img} alt="" className="w-full" /> */}
                     </div>

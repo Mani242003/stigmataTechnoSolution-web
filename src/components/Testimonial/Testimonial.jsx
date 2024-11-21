@@ -1,12 +1,12 @@
 import React, { useRef, useCallback } from "react";
-import logo1 from "../../assets/Joined forece/joinedForceKineWorks.jpeg";
-import logo2 from "../../assets/Joined forece/L&T.jpg";
-import logo3 from "../../assets/Joined forece/mx_techies_logo.jpg";
-import logo4 from "../../assets/Joined forece/joinedForceAWS.jpeg";
+import logo1 from "/images/customer/joinedForceKineWorks.jpeg";
+import logo2 from "/images/customer/L&T.jpg";
+import logo3 from "/images/customer/mx_techies_logo.jpg";
+import logo4 from "/images/customer/joinedForceAWS.jpeg";
 import Slider from "react-slick";
 import { FaQuoteLeft, FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import avatar from "../../assets/Joined forece/avatar.png";
-import testimonials from "../../assets/data/testimonial";
+import avatar from "/images/icons/avatar.png";
+import testimonials from "../../data/testimonial";
 
 const Testimonial = () => {
   const sliderRef1 = useRef(null);
@@ -56,11 +56,7 @@ const Testimonial = () => {
                           role="presentation"
                           src={logo}
 
-                          style={{
-                            
-                            filter: "grayscale(100%)"
-                          }}
-                         
+                       
                          
                           alt="Description of the image"
                           // priority={data.isImportant ? true : false}
